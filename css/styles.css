@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #071335, #2d3435);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    text-align: center;
+    padding: 20px 25px;
+    box-shadow: 0 5px 10px rgba(71, 3, 6, 0.7);
+}
+
+form .title {
+    color: #252525;
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+form label {
+    margin-bottom: 35px;
+}
+
+form label .fa-solid {
+    font-size: 20px;
+    color: #cb232c;
+    margin-right: 10px;
+}
+
+form label input {
+    outline: none;
+    border: none;
+    color: #252525;
+    border-bottom: solid 1px #ce1d61;
+    padding: 0 5px;
+    font-size: 18px;
+}
+
+form label input::placeholder {
+    color: rgba(37, 37, 37, 0.5);
+}
+
+form .link {
+    color: #252525;
+    margin-bottom: 15px;
+}
+
+form .custom-select {
+    display: inline-flexbox;
+    outline: none;
+    border: none;
+    color: #252525;
+    border-bottom: solid 1px #ce1d61;
+    padding: 0 5px;
+    font-size: 18px;
+}
+
+form .inputPassword {
+    display: inline-flexbox;
+    outline: none;
+    border: none;
+    color: #252525;
+    border-bottom: solid 1px #ce1d61;
+    padding: 0 5px;
+    font-size: 18px;
+}
+.Cliente{
+    display: inline-flex;
+    font-size: 20px;
+    color: #19106e;
+    text-align: left;
+}
+.user {
+    height: 250px;
+    width: 250px;
+    margin-bottom: 40px;
+    margin-left: 30%;
+}   
+
+
+.login {
+    height: 30%;
+    width: 30%;
+    margin: auto;
+    margin-top: 8%;
+}
+
+.verde {
+    background-color: #09255e;
+    border-color: #0B3890;
+}
+
+.cajero {
+    background-color: #1a4292;
+    height: 670px;
+    width: 90%;
+    margin: auto;
+    margin-top: 8%;
+}
+
+.logoc {
+    display: inline-flexbox;
+    margin-left: 10px;
+    margin-top: 20px;
+    color: white;
+    font-size: 30px;
+    font-family: 'Lato', bold;
+}
+
+.titulo {
+    margin-top: 25px;
+    margin-left: 25px;
+    color: #14ADED;
+    font-family: 'Lato', bold;
+    font-size: 20px;
+}
+
+.subtitulo {
+    margin-top: -10px;
+    margin-left: 25px;
+    color: white;
+    font-family: 'Lato', bold;
+    font-size: 20px;
+}
+
+.cuadro {
+    background-color: #14ADED;
+    color: white;
+    font-family: 'Lato', bold;
+    font-size: 20px;
+    margin-left: 35px;
+    height: 50px;
+    cursor: pointer;
+}
+
+
+.centrartexto {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.botonAccion {
+    margin-top: 60px;
+    color: #0B3890;
+}
+
+.rosa {
+    background-color: #5f1c45;
+    border-color: #5f1c45;
+}
+
+.material-symbols-outlined {
+font-variation-settings:
+'FILL' 0,
+'wght' 400,
+'GRAD' 0,
+'opsz' 48
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ATM</title>
+</head>
+<body>
+<h1>Bienvenido a su banco Bankafe </h1>
+<div id="options" style="display: none;">
+    <h2>Options</h2>
+    <button onclick="checkBalance()">Check Balance</button>
+    <button onclick="withdraw()">Withdraw</button>
+    <button onclick="deposit()">Deposit</button>
+</div>
+
+<script>
+        let clients = [
+            {pin: "1234", balance: 1000},
+            {pin: "5678", balance: 2000},
+            {pin: "9012", balance: 3000}
+        ];
+
+        let currentClient;
+
+        function validatePIN() {
+            let pin = document.getElementById("pin").value;
+            currentClient = clients.find(client => client.pin === pin);
+            if (currentClient) {
+                document.getElementById("options").style.display = "block";
+            } else {
+                alert("Invalid PIN");
+            }
+        }
+
+        function checkBalance() {
+            alert("Your balance is $" + currentClient.balance);
+        }
+
+        function withdraw() {
+            let amount = prompt("Enter amount to withdraw:");
+            if (amount <= currentClient.balance) {
+                currentClient.balance -= amount;
+                alert("Withdrawal successful. Your new balance is $" + currentClient.balance);
+            } else {
+                alert("Insufficient funds");
+            }
+        }
+
+        function deposit() {
+            let amount = prompt("Enter amount to deposit:");
+            currentClient.balance += parseInt(amount);
+            alert("Deposit successful. Your new balance is $" + currentClient.balance);
+        }
+    </script>
+</body>
+</html>
